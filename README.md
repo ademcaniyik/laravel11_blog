@@ -119,5 +119,5 @@ Bu proje özel bir lisans altında korunmaktadır - detaylar için [LICENSE](LIC
 
 ## 📧 İletişim
 
-Email: ademcaniyik7@gmail.com  
+Email: [ademcaniyik7@gmail.com](mailto:ademcaniyik7@gmail.com)  
 Proje Linki: [https://github.com/ademcaniyik/laravel11_blog](https://github.com/ademcaniyik/laravel11_blog)
