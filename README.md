@@ -113,10 +113,11 @@ php artisan test
 - `PUT /api/posts/{id}` - Yazıyı güncelle
 - `DELETE /api/posts/{id}` - Yazıyı sil
 
-## Lisans
+## 📄 Lisans
 
-Bu proje MIT lisansı altında lisanslanmıştır - detaylar için [LICENSE](LICENSE) dosyasına bakın.
+Bu proje özel bir lisans altında korunmaktadır - detaylar için [LICENSE](LICENSE) dosyasına bakın.
 
-## İletişim
+## 📧 İletişim
 
+Email: ademcaniyik7@gmail.com  
 Proje Linki: [https://github.com/ademcaniyik/laravel11_blog](https://github.com/ademcaniyik/laravel11_blog)
