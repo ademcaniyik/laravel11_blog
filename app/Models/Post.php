@@ -11,6 +11,9 @@ class Post extends Model
 {
     use HasFactory;
 
+    /**
+     * Toplu atama için izin verilen alanlar
+     */
     protected $fillable = [
         'user_id',
         'title',
@@ -18,11 +21,15 @@ class Post extends Model
         'slug'
     ];
 
+    /**
+     * Model oluşturulurken çalışacak olaylar
+     */
     protected static function boot()
     {
         parent::boot();
 
         static::creating(function ($post) {
+            // Başlıktan benzersiz slug oluştur
             $slug = Str::slug($post->title);
             $count = static::where('slug', 'like', $slug . '%')->count();
             
@@ -30,11 +37,17 @@ class Post extends Model
         });
     }
 
+    /**
+     * Blog yazısının sahibi olan kullanıcı ilişkisi
+     */
     public function user()
     {
         return $this->belongsTo(User::class);
     }
 
+    /**
+     * Route model binding için kullanılacak anahtar
+     */
     public function getRouteKeyName()
     {
         return 'slug';
